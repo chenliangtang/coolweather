@@ -11,14 +11,14 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
 	 *Province表建表语句 
 	 */
 	public static final String CREATE_PROVINCE="create table Province("
-			+ "id integer primary key antoincrement,"
+			+ "id integer primary key,"
 			+ "province_name text,"
 			+ "province_code text)";
 	/**
 	 *City表建表语句 
 	 */
 	public static final String CREATE_CITY="create table City("
-			+ "id integer primary key antoincrement,"
+			+ "id integer primary key,"
 			+ "city_name text,"
 			+ "city_code text,"
 			+ "province_id integer)";
@@ -26,9 +26,9 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
 	 *Country表建表语句 
 	 */
 	public static final String CREATE_COUNTRY="create table Country("
-			+ "id integer primary key autoincrement,"
+			+ "id integer primary key,"
 			+ "country_name text,"
-			+ "country_code text"
+			+ "country_code text,"
 			+ "city_id integer)";
 	public CoolWeatherOpenHelper(Context context,String name,CursorFactory factory,int version){
 		super(context, name, factory, version);
