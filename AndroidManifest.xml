@@ -27,6 +27,10 @@
         <activity
             android:name="com.coolweather.app.activity.WeatherActivity" >
         </activity>
+        <receiver
+            android:name="com.coolweather.app.receiver.AutoUpdteReceiver"></receiver>
+        <service
+            android:name="com.coolweather.app.service.AutoUpgateService"></service>
     </application>
 
 </manifest>
